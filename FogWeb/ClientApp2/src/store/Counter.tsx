@@ -7,16 +7,17 @@ export const actionCreators = {
   decrement: () => ({ type: decrementCountType })
 };
 
-export const reducer = (state, action) => {
+export const reducer = (state:any, action:any) => {
+
   state = state || initialState;
 
   if (action.type === incrementCountType) {
-    return { ...state, count: state.count + 10};
+    return { ...state, count: state.count + 20 };
   }
 
   if (action.type === decrementCountType) {
-    return { ...state, count: state.count - 1 };
-  }
+    return { ...state, count: state.counter - 1 };
+  } 
 
   return state;
 };
