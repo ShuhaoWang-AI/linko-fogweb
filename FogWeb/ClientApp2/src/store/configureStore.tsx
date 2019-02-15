@@ -19,9 +19,18 @@ export default function configureStore (history: History, initialState: any) {
   // In development, use the browser's Redux dev tools extension if installed
   const enhancers = [];
   const isDevelopment = process.env.NODE_ENV === 'development';
-  if (isDevelopment && typeof window !== 'undefined' && window.devToolsExtension) {
-    enhancers.push(window.devToolsExtension());
+    if (isDevelopment && typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION__ ) {
+        enhancers.push(window.__REDUX_DEVTOOLS_EXTENSION__ ());
   }
+
+    //const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION__ || compose; 
+    const composeEnhancers =
+        typeof window === 'object' &&
+            window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
+            window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
+                // Specify extension’s options like name, actionsBlacklist, actionsCreators, serialize...
+            }) : compose;
+
 
   const rootReducer = combineReducers({
     ...reducers,
@@ -32,7 +41,7 @@ export default function configureStore (history: History, initialState: any) {
   return createStore(
     rootReducer,
     initialState,
-    compose(applyMiddleware(...middleware))
+      composeEnhancers(applyMiddleware(...middleware))
     // compose(applyMiddleware(...middleware), ...enhancers)
   );
 }

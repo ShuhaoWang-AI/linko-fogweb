@@ -11,7 +11,8 @@ import registerServiceWorker from './registerServiceWorker';
 declare global {
   interface Window {
     initialReduxState: () => void;
-    devToolsExtension: ()  => void;
+      __REDUX_DEVTOOLS_EXTENSION__: () => any;
+      __REDUX_DEVTOOLS_EXTENSION_COMPOSE__: ({}:any) => any;
   }
 }
 // Create browser history to use in the Redux store
