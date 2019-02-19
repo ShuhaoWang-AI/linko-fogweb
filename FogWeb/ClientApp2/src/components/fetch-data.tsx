@@ -3,7 +3,7 @@ import { bindActionCreators, Dispatch, Action } from 'redux';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { ThunkDispatch } from 'redux-thunk';
-import { actionCreators } from '../store/WeatherForecasts';
+import { actionCreators } from '../store/weather-forecasts';
 
 interface Props {
   counter: number,

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import './NavMenu.css';
+import './nav-menu.css';
 
 interface Props {
   
@@ -37,7 +37,10 @@ export default class NavMenu extends React. Component<Props, any>  {
                 </NavItem>
                 <NavItem>
                   <NavLink tag={Link} className="text-dark" to="/fetch-data">Fetch data</NavLink>
-                </NavItem>
+                  </NavItem>
+                  <NavItem>
+                      <NavLink tag={Link} className="text-dark" to="/about">About</NavLink>
+                  </NavItem>
               </ul>
             </Collapse>
           </Container>

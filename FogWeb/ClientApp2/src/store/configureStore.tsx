@@ -2,8 +2,8 @@ import { applyMiddleware, combineReducers, compose, createStore } from 'redux';
 import thunk from 'redux-thunk';
 import { History } from 'history';
 import { routerReducer, routerMiddleware } from 'react-router-redux';
-import * as Counter from './Counter';
-import * as WeatherForecasts from './WeatherForecasts';
+import * as Counter from './counter';
+import * as WeatherForecasts from './weather-forecasts';
 
 export default function configureStore (history: History, initialState: any) {
   const reducers = {
@@ -28,7 +28,7 @@ export default function configureStore (history: History, initialState: any) {
         typeof window === 'object' &&
             window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
             window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
-                // Specify extension’s options like name, actionsBlacklist, actionsCreators, serialize...
+                // Specify extensionï¿½s options like name, actionsBlacklist, actionsCreators, serialize...
             }) : compose;
 
 

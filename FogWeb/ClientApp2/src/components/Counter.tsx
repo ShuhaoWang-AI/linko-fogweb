@@ -1,7 +1,7 @@
 import React from 'react';
 import { bindActionCreators, Dispatch } from 'redux';
 import { connect } from 'react-redux';
-import { actionCreators } from '../store/Counter'; 
+import { actionCreators } from '../store/counter'; 
 import { stat } from 'fs';
 
 interface Props {
