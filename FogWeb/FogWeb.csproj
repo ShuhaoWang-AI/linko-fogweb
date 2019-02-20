@@ -16,12 +16,8 @@
 
   <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
-    <Compile Remove="ClientApp\src\components\NewFolder\**" />
     <Content Remove="$(SpaRoot)**" />
-    <Content Remove="ClientApp\src\components\NewFolder\**" />
-    <EmbeddedResource Remove="ClientApp\src\components\NewFolder\**" />
     <None Remove="$(SpaRoot)**" />
-    <None Remove="ClientApp\src\components\NewFolder\**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
 
@@ -31,6 +27,7 @@
     <None Remove="ClientApp\src\components\layout.bin" />
     <None Remove="ClientApp\src\components\layout\side-nav\side-nav - Copy.bak" />
     <None Remove="ClientApp\src\components\layout\side-nav\side-nav - Copy.tsx" />
+    <None Remove="ClientApp\src\components\rest-client\data-services.tsx" />
   </ItemGroup>
 
   <ItemGroup>
@@ -43,6 +40,12 @@
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\app.tsx" />
     <TypeScriptCompile Include="ClientApp\src\components\content\dashboard\dashboard.tsx" />
+    <TypeScriptCompile Include="ClientApp\src\components\rest-client\data-services.tsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\src\components\LinkoTypes\" />
+    <Folder Include="ClientApp\src\components\RestClient\" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

@@ -1,0 +1,43 @@
+﻿$count-font-size: 20px;
+$description-font-size: 14px;
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 150px;
+    height: 70px; 
+    border-radius: 5px;
+    padding: 5px;
+    margin:10px;
+
+    .event-description {
+        align-self: center;
+        font-size: $description-font-size;
+    }
+
+    ;
+
+    .count {
+        align-self: center;
+        font-size: $count-font-size;
+        font-weight: 500;
+    }
+}
+.green-card {
+    @extend .card;
+    color: #67cc34;
+    background: #e0f0d9;
+}
+
+.warning-card {
+    @extend .card;
+    color: #ff794c;
+    background: #f93
+}
+
+.red-card {
+    @extend .card;
+    color: #990600;
+    background: #f1dede;
+}
