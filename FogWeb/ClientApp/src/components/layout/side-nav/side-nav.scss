@@ -6,11 +6,13 @@
     flex-direction: column;
     max-width: 150px;
     padding: 5px;
+    background: #f0f0f0
 }
 
 .left-nave > link {
     margin: 5px;
-    align-self: flex-start
+    align-self: flex-start;
+    color:#23409a
 }
 
 .linko-content {

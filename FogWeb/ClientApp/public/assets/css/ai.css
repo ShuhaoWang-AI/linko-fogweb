@@ -1,0 +1,433 @@
+﻿/* Aquatic Informatics Template 
+	Author: Mel Roth
+	Author URL: melroth.com
+	Author Email: mel.roth@aquaticinformatics.com or mel@melroth.com
+*/
+/* Colors Scss Document */
+/* Bootstrap Overrides Document */
+body {
+    font-family: "hindregular";
+    color: #444;
+}
+
+a {
+    color: #0083d7;
+}
+
+    a:hover {
+        color: #09f;
+    }
+
+strong {
+    font-family: 'hindsemibold', sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    color: #23409a;
+}
+
+h2 {
+    color: #0083d7;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.navbar {
+    border-bottom: 1px solid #ccc;
+    padding: .35rem 1rem .3rem;
+}
+
+.navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+    color: #444;
+}
+
+.container {
+    margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+    .ml-auto {
+        margin-left: 0 !important;
+    }
+}
+
+.dropdown-item {
+    color: #0083d7;
+}
+
+    .dropdown-item:hover {
+        background: none;
+        color: #23409a;
+    }
+
+.navbar-toggler {
+    border: 0;
+}
+
+.table .thead-light th {
+    color: #444;
+    background-color: #e6e6e6;
+    border-color: #ccc;
+}
+
+.table th {
+    font-family: 'hindsemibold', sans-serif;
+    font-weight: normal;
+}
+
+.btn-outline-primary {
+    color: #0083d7;
+    border-color: #0083d7;
+}
+
+    .btn-outline-primary:hover {
+        background-color: #0083d7;
+        border-color: #0083d7;
+    }
+
+.modal-backdrop {
+    background-color: #fff;
+}
+
+    .modal-backdrop.show {
+        opacity: 0.85;
+    }
+
+.container {
+    margin-top: 100px;
+}
+
+/* Forms
+*/
+.form-control,
+.custom-control-label::before {
+    border: 1px solid #ccc;
+}
+
+.custom-control-label::before {
+    background-color: #fff;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #0083d7 !important;
+    border: transparent;
+}
+
+.was-validated .form-control:invalid,
+.form-control.is-invalid,
+.was-validated.custom-select:invalid,
+.custom-select.is-invalid {
+    border-color: #fe3200;
+}
+
+.invalid-feedback {
+    color: #fe3200;
+}
+
+.was-validated .custom-file-input:valid ~ .custom-file-label,
+.custom-file-input.is-valid ~ .custom-file-label {
+    border-color: #31a926;
+}
+
+/* Carousel 
+*/
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#666' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#666' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'hindlight';
+    src: url("../fonts/hind-light-webfont.woff2") format("woff2"), url("../fonts/hind-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hindregular';
+    src: url("../fonts/hind-regular-webfont.woff2") format("woff2"), url("../fonts/hind-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hindmedium';
+    src: url("../fonts/hind-medium-webfont.woff2") format("woff2"), url("../fonts/hind-medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hindsemibold';
+    src: url("../fonts/hind-semibold-webfont.woff2") format("woff2"), url("../fonts/hind-semibold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hindbold';
+    src: url("../fonts/hind-bold-webfont.woff2") format("woff2"), url("../fonts/hind-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+/* Forms */
+/* Search */
+.ai-search {
+    position: relative;
+}
+
+    .ai-search input[type='text'] {
+        background: url(../img/search.svg) no-repeat;
+        background-position: 10px 11px;
+        padding-left: 30px;
+    }
+
+    .ai-search input[type='text'] {
+        padding-right: 24px;
+    }
+
+.clear-search {
+    background: #fff url(../img/clear.svg) no-repeat;
+    border: 0;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: .8rem;
+    right: 1rem;
+}
+
+.ai-search input[type='text']:invalid ~ .clear-search {
+    display: none;
+}
+
+/* Text, 
+   Text Area
+*/
+.ai-text-field:focus,
+.ai-textarea:focus,
+.ai-search input[type='text']:focus {
+    border: 1px solid #0083d7;
+}
+
+.ai-text-field:empty .ai-text-field-label {
+    color: red;
+}
+
+.ai-text-field-label {
+    font-size: .875rem;
+    margin-bottom: 0;
+}
+
+/* Alerts Document */
+.x {
+    fill: #666;
+}
+
+    .x.error {
+        fill: #fe3200;
+    }
+
+    .x.success {
+        fill: #31a926;
+    }
+
+    .x.warning {
+        fill: #997c00;
+    }
+
+    .x.information {
+        fill: #0083d7;
+    }
+
+.alert {
+    border: 0;
+    border-radius: 5px;
+    padding: 15px 20px;
+    position: relative;
+    text-align: center;
+    max-width: 320px;
+}
+
+.alert-error {
+    background-color: #f1dede;
+    color: #fe3200;
+}
+
+.alert-success {
+    background-color: #e0f0d9;
+    color: #31a926;
+}
+
+.alert-warning {
+    background-color: #fff9e0;
+    color: #997c00;
+}
+
+.alert-information {
+    background-color: #cde7f0;
+    color: #0083d7;
+}
+
+.alert button {
+    background: none;
+    border: 0;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+/* Segmented Control */
+ul.segments li,
+ul.segements li:hover {
+    background: transparent;
+}
+
+.nav-pills.segments li a {
+    border-radius: 0;
+    border: 1px solid #0083d7;
+}
+
+.nav-pills.segments li:last-child a {
+    border-left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.nav-pills.segments li:first-child a {
+    border-right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.nav-pills.segments .nav-link.active {
+    background: #0083d7;
+}
+
+/* Tabs */
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border-color: #fff #fff #ccc;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link.active:hover {
+    border-color: #ccc #ccc #fff;
+}
+
+.nav-tabs.material .nav-link {
+    color: #444;
+    border: 0;
+    border-bottom: 3px solid transparent;
+}
+
+    .nav-tabs.material .nav-link:focus,
+    .nav-tabs.material .nav-link:hover {
+        border-bottom: 3px solid transparent;
+        color: #09f;
+    }
+
+    .nav-tabs.material .nav-link.active,
+    .nav-tabs.material .nav-item.show .nav-link,
+    .nav-tabs.material .nav-link.active:hover,
+    .nav-tabs.material .nav-item.show .nav-link:hover {
+        color: #23409a;
+        background-color: #fff;
+        border: 0;
+        border-bottom: 3px solid #23409a;
+    }
+
+/* Buttons */
+.btn {
+    border-radius: 4px;
+    min-width: 76px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.ai-save {
+    background-image: linear-gradient(#31a926, #0d9a00);
+}
+
+    .ai-save:hover {
+        background-image: linear-gradient(#37be2b, #0fb400);
+    }
+
+.ai-action {
+    background: #0083d7;
+}
+
+    .ai-action:hover {
+        background: #0093f1;
+    }
+
+.ai-white {
+    border-color: #ccc;
+    color: #444;
+}
+
+    .ai-white:hover {
+        background: #f9f9f9;
+        border-color: #c6c6c6;
+        color: #2b2b2b;
+    }
+
+.ai-save,
+.ai-action,
+.ai-save:hover,
+.ai-action:hover {
+    color: #fff;
+}
+
+/* Tables */
+.table > thead > tr > th {
+    background-color: #e6e6e6;
+    border: 1px solid #ccc;
+    font-family: "hindsemibold";
+    padding: .5rem .75rem;
+}
+
+.table tr:first-child {
+    border-top: none;
+}
+
+.table tr,
+.table td {
+    padding: .5rem .75rem;
+}
+
+.swatch {
+    min-height: 200px;
+    padding: 15px;
+    padding-top: 30px;
+    vertical-align: bottom;
+}
+
+    .swatch.light {
+        color: #333;
+    }
+
+/* Colours */
+.colors .row {
+    margin-bottom: 2em;
+}
+
+.card {
+    box-shadow: 0 2px 4px rgba(102, 102, 102, 0.1);
+}
+
+/*# sourceMappingURL=ai.css.map */

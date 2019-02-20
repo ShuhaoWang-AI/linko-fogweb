@@ -1,0 +1,21 @@
+﻿.navbar {
+    background: #fff;
+    border-bottom: 1px solid #ccc !important;
+    padding: .35rem 1rem .3rem;
+}
+
+.header-text {
+    font-size: 9px; 
+    color: #444;  
+}
+
+.menu-item {
+    display:flex;
+    flex-direction:column;
+    justify-content:center
+}
+
+.menu-icon {
+    align-self: center;
+    color: #0083d7
+}

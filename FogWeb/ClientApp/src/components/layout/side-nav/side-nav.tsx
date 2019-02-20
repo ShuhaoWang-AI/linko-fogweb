@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { type } from 'os';
 
-import './side-nav.css';
+import './side-nav.scss';
+//import '../../../components/assets/css/ai.css';
 
 type Prop = {  
 }
