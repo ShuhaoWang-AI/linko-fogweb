@@ -27,15 +27,12 @@ export default class Header extends React.Component<Props, any>  {
             <NavbarBrand tag={Link} to="/">FogWeb</NavbarBrand>
             <NavbarToggler onClick={this.toggle} className="mr-2" />
             <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={this.state.isOpen} navbar>
-              <ul className="navbar-nav flex-grow">
+              <ul className="navbar-nav flex-grow"> 
                 <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/">Home2</NavLink>
+                  <NavLink tag={Link} className="text-dark" to="/counter">111</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/counter">Counter</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/fetch-data">Fetch data</NavLink>
+                  <NavLink tag={Link} className="text-dark" to="/fetch-data"></NavLink>
                   </NavItem>
                   <NavItem>
                       <NavLink tag={Link} className="text-dark" to="/about">About</NavLink>

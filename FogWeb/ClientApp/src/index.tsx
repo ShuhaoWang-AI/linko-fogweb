@@ -5,9 +5,7 @@ import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
 import { createBrowserHistory, BrowserHistoryBuildOptions  } from 'history';
 import configureStore from './store/configureStore';
-import LinkoRoute from './components/route/linko-route'; 
-import Layout from './components/layout/layout';
-
+ 
 import { App } from './app';
 
 import registerServiceWorker from './registerServiceWorker';
@@ -47,6 +45,6 @@ ReactDOM.render(
         <App  />
     </ConnectedRouter>
   </Provider>,
-  rootElement);
+    rootElement); 
 
 registerServiceWorker();

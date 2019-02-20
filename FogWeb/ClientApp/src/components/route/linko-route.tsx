@@ -18,8 +18,7 @@ import {
     Reports
 } from '../content';
 
-class LinkoRoute extends React.Component<any, any> {
-    public render() {
+export const LinkoRoute = () => { 
         return (
             <Switch>
                 <Route exact path='/' component={Home} />
@@ -35,8 +34,5 @@ class LinkoRoute extends React.Component<any, any> {
                 <Route path='/fetch-data/:startDateIndex?' component={FetchData} />
                 <Route path='/about' component={About} /> 
             </Switch>
-        );
-    }
-}
-
-export default LinkoRoute;
+        ); 
+} 

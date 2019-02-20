@@ -21,14 +21,14 @@ interface Props {
 
 class Dashboard extends Component<Props, any> {
     componentDidMount() {
-        debugger;
+       
         // This method is called when the component is first added to the document
         // this.ensureDataFetched();
     }
 
     componentDidUpdate() {
         // This method is called when the route parameters change
-        this.ensureDataFetched();
+        //this.ensureDataFetched();
     }
 
     ensureDataFetched() {
