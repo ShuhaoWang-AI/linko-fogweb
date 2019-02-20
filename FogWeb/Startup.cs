@@ -25,7 +25,7 @@ namespace FogWeb
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
-                configuration.RootPath = "ClientApp2/build";
+                configuration.RootPath = "ClientApp/build";
             });
         }
 
@@ -56,7 +56,7 @@ namespace FogWeb
 
             app.UseSpa(spa =>
             {
-                spa.Options.SourcePath = "ClientApp2";
+                spa.Options.SourcePath = "ClientApp";
 
                 if (env.IsDevelopment())
                 {

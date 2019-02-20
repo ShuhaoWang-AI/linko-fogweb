@@ -22,7 +22,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ClientApp\src2\" />
+    <None Remove="ClientApp\src\app.tsx" />
+    <None Remove="ClientApp\src\components\content\dashboard\dashboard.tsx" />
+    <None Remove="ClientApp\src\components\layout\side-nav\side-nav - Copy.bak" />
+    <None Remove="ClientApp\src\components\layout\side-nav\side-nav - Copy.tsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ClientApp\package-lock.json" />
+    <Content Include="ClientApp\package.json" />
+    <Content Include="ClientApp\public\manifest.json" />
+    <Content Include="ClientApp\tsconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app.tsx" />
+    <TypeScriptCompile Include="ClientApp\src\components\content\dashboard\dashboard.tsx" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

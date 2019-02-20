@@ -1,0 +1,1 @@
+export {default as GuessTrips } from './GuessTrips'

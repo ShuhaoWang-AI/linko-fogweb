@@ -1,0 +1,22 @@
+﻿
+.left-nav {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 150px;
+    padding: 5px;
+}
+
+.left-nave > link {
+    margin: 5px;
+    align-self: flex-start
+}
+
+.linko-content {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    margin: 5px;
+    padding: 5px;
+}
