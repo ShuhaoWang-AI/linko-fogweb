@@ -8,8 +8,8 @@ import {actionCreators} from '../../../store/actions/action-creators/dashboard-a
 
 import { dataServices } from '../../../rest-client/data-services'
 import { ActiveCard } from './active-card/active-card';
-import '../content.css'
-import './dashboard.css'
+
+import './dashboard.scss'
 
 
 interface Props {

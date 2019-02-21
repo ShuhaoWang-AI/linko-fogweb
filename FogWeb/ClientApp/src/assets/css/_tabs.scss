@@ -1,0 +1,33 @@
+/* Tabs */
+
+.nav-tabs .nav-link:focus, 
+.nav-tabs .nav-link:hover {
+  border-color: $ai-white $ai-white $ai-xlight;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link.active:hover {
+  border-color: $ai-xlight $ai-xlight $ai-white;
+}
+
+.nav-tabs.material .nav-link {
+	color: $ai-dark;
+	border: 0;
+	border-bottom: 3px solid transparent;
+}
+
+.nav-tabs.material .nav-link:focus,
+.nav-tabs.material .nav-link:hover {
+  border-bottom: 3px solid transparent;
+	color: $ai-hover;
+}
+
+.nav-tabs.material .nav-link.active,
+.nav-tabs.material .nav-item.show .nav-link,
+.nav-tabs.material .nav-link.active:hover,
+.nav-tabs.material .nav-item.show .nav-link:hover {
+  color: $ai-dark-blue;
+  background-color: $ai-white;
+	border: 0;
+	border-bottom: 3px solid $ai-dark-blue;
+}

@@ -1,0 +1,47 @@
+﻿
+@import '../../assets/css/_colors.scss'; 
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+    html {
+        font-size: 16px; 
+    }
+
+    body container {
+        height: 100% !important;
+        background: $ai-white;
+        padding:0px !important;
+    }
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.main {
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-direction: row; /* Safari 6.1+ */
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    min-height: 100%;
+    width: 100%;
+    padding-top:20px;
+    background: $ai-xxxlight;
+}
+.content {
+    padding: 0px 10px;
+    flex: 1; 
+}
+
+.container {
+    min-width: 90% !important; 
+}

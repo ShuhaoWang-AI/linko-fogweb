@@ -1,0 +1,36 @@
+/* Colors Scss Document */
+
+$ai-base-color: #333;
+$ai-dark: #444;
+$ai-medium: #666;
+$ai-light: #999;
+$ai-xlight: #ccc;
+$ai-xxlight: #e6e6e6;
+$ai-xxxlight: #f0f0f0;
+$ai-white: #fff;
+
+$ai-dark-blue: #23409a;
+$ai-blue: #0083d7;
+$ai-light-blue: #cde7f0;
+
+$ai-orange: #f93;
+$ai-light-green: #e0f0d9;
+$ai-green: #31a926;
+$ai-dark-green: #0d9a00;
+$ai-light-red: #f1dede;
+$ai-red: #fe3200;
+$ai-gold: #ffcc02;
+$ai-dark-gold: #997c00;
+$ai-light-gold: #fff9e0;
+
+$ai-hover: #09f;
+
+
+$ai-lighten-blue: lighten($ai-blue, 5%);
+
+$ai-lighten-green: lighten($ai-green, 5%);
+$ai-lighten-dark-green: lighten($ai-dark-green, 5%);
+
+$ai-darken-dark: darken($ai-dark, 10%);
+$ai-darken-white: darken($ai-white, 2.5%);
+$ai-darken-xlight: darken($ai-xlight, 2.5%);

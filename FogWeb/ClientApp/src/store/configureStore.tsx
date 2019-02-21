@@ -37,7 +37,7 @@ export default function configureStore(history: History, initialState: any) {
 
     const rootReducer = combineReducers({
         ...reducers,
-        routing: routerReducer
+        //routing: routerReducer
     });
      
     return createStore(

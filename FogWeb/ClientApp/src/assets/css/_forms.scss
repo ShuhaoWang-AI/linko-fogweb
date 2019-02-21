@@ -1,0 +1,51 @@
+/* Forms */
+
+
+/* Search */
+
+.ai-search {
+	position: relative;
+}
+
+.ai-search input[type='text']{
+  background: url(../img/search.svg) no-repeat;
+  background-position: 10px 11px;
+  padding-left: 30px;
+}
+
+.ai-search input[type='text'] {
+	padding-right: 24px;
+}
+
+.clear-search {
+  background: #fff url(../img/clear.svg) no-repeat;
+	border: 0;
+	position: absolute;
+  width: 12px;
+	height: 12px;
+	top: .8rem;
+	right: 1rem;
+}
+
+.ai-search input[type='text']:invalid ~ .clear-search {
+	display: none;
+}
+
+/* Text, 
+   Text Area
+*/
+
+.ai-text-field:focus, 
+.ai-textarea:focus,
+.ai-search input[type='text']:focus {
+  border: 1px solid #0083d7;
+}
+
+.ai-text-field:empty .ai-text-field-label {
+	color: red;
+}
+
+.ai-text-field-label {
+	font-size: .875rem;
+	margin-bottom: 0;
+}

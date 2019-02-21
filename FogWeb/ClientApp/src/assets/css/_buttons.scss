@@ -1,0 +1,42 @@
+/* Buttons */
+
+.btn {
+	border-radius: 4px;
+	min-width: 76px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.ai-save {
+  background-image: linear-gradient( $ai-green, $ai-dark-green );
+}
+
+.ai-save:hover {
+  background-image: linear-gradient( $ai-lighten-green, $ai-lighten-dark-green );
+}
+
+.ai-action {
+	background: $ai-blue;
+}
+
+.ai-action:hover {
+	background: $ai-lighten-blue;
+}
+
+.ai-white {
+	border-color: $ai-xlight;
+	color: $ai-dark;
+}
+
+.ai-white:hover {
+	background: $ai-darken-white;
+	border-color: $ai-darken-xlight;
+	color: $ai-darken-dark;
+}
+
+.ai-save,
+.ai-action,
+.ai-save:hover,
+.ai-action:hover {
+	color: $ai-white;
+}

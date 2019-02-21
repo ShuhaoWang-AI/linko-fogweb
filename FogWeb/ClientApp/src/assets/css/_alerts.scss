@@ -1,0 +1,58 @@
+/* Alerts Document */
+
+.x {
+	fill: $ai-medium;
+}
+
+.x.error {
+	fill: $ai-red;
+}
+
+.x.success {
+	fill: $ai-green;
+}
+
+.x.warning {
+	fill: $ai-dark-gold;
+}
+
+.x.information {
+	fill: $ai-blue;
+}
+
+.alert {
+	border: 0;
+	border-radius: 5px;
+	padding: 15px 20px;
+	position: relative;
+	text-align: center;
+	max-width: 320px;
+}
+
+.alert-error {
+	background-color: $ai-light-red;
+	color: $ai-red;
+}
+
+.alert-success {
+	background-color: $ai-light-green;
+	color: $ai-green;
+}
+
+.alert-warning {
+	background-color: $ai-light-gold;
+	color: $ai-dark-gold;
+}
+
+.alert-information {
+	background-color: $ai-light-blue;
+	color: $ai-blue;
+}
+
+.alert button {
+	background: none;
+	border: 0;
+	position: absolute;
+	top: 2px;
+	right: 2px;
+}

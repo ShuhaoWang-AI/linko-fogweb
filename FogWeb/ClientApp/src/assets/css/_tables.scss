@@ -1,0 +1,17 @@
+/* Tables */
+
+.table > thead > tr > th {
+  background-color: $ai-xxlight;
+  border: 1px solid $ai-xlight;
+	font-family: "hindsemibold";
+	padding: .5rem .75rem;
+}
+
+.table tr:first-child {
+	border-top: none;
+}
+
+.table tr,
+.table td {
+	padding: .5rem .75rem;
+}

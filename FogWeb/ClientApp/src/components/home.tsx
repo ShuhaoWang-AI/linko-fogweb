@@ -3,7 +3,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { type } from 'os';
 
-import './home.css';
+import './home.scss';
 
 type Prop = {  
 }

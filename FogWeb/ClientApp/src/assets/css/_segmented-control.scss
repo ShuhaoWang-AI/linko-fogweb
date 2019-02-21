@@ -1,0 +1,27 @@
+/* Segmented Control */
+
+ul.segments li,
+ul.segements li:hover {
+	background: transparent;
+}
+
+.nav-pills.segments li a {
+	border-radius: 0;
+	border: 1px solid $ai-blue;
+}
+
+.nav-pills.segments li:last-child a {
+	border-left: 0;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.nav-pills.segments li:first-child a {
+	border-right: 0;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.nav-pills.segments .nav-link.active {
+	background: $ai-blue;
+}

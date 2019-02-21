@@ -1,0 +1,149 @@
+/* Bootstrap Overrides Document */
+
+body {
+	font-family: "hindregular";
+	color: $ai-dark;
+}
+
+a {
+  color: $ai-blue;
+}
+
+a:hover {
+  color: $ai-hover;
+}
+
+strong {
+	font-family: 'hindsemibold', sans-serif;
+	font-weight: normal;
+}
+
+h1 {
+	color: $ai-dark-blue;
+}
+
+h2 {
+	color: $ai-blue;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+h3 {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+.navbar {
+	border-bottom: 1px solid $ai-xlight;
+	padding: .35rem 1rem .3rem;
+}
+
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+	color: $ai-dark;
+}
+
+.container {
+  margin-bottom: 50px;
+}
+
+
+@media (max-width: 768px) {
+	.ml-auto {
+		margin-left: 0 !important;
+	}
+}
+
+.dropdown-item {
+	color: $ai-blue;
+}
+
+.dropdown-item:hover {
+	background: none;
+	color: $ai-dark-blue;
+}
+
+.navbar-toggler {
+	border: 0;
+}
+
+.table .thead-light th {
+  color: $ai-dark;
+  background-color: $ai-xxlight;
+  border-color: $ai-xlight;
+}
+
+.table th {
+	font-family: 'hindsemibold', sans-serif;
+	font-weight: normal;
+}
+
+.btn-outline-primary {
+	color: $ai-blue;
+	border-color: $ai-blue;
+}
+
+.btn-outline-primary:hover {
+  background-color: $ai-blue;
+	border-color: $ai-blue;
+}
+
+.modal-backdrop {
+  background-color: $ai-white;
+}
+
+.modal-backdrop.show {
+  opacity: 0.85;
+}
+
+.container {
+	margin-top: 100px;
+}
+
+/* Forms
+*/
+
+.form-control,
+.custom-control-label::before {
+	border: 1px solid $ai-xlight;
+}
+
+.custom-control-label::before {
+	background-color: $ai-white;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+	background-color: $ai-blue !important;
+	border: transparent;
+}
+
+.was-validated .form-control:invalid, 
+.form-control.is-invalid, 
+.was-validated.custom-select:invalid,
+.custom-select.is-invalid {
+  border-color: $ai-red;
+}
+
+.invalid-feedback {
+  color: $ai-red;
+}
+
+.was-validated .custom-file-input:valid ~ .custom-file-label, 
+.custom-file-input.is-valid ~ .custom-file-label {
+  border-color: $ai-green;
+}
+
+/* Carousel 
+*/
+
+.carousel-control-next-icon {
+  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#666' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#666' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
+}
