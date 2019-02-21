@@ -3,9 +3,10 @@ import { bindActionCreators, Dispatch, Action } from 'redux';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { ThunkDispatch } from 'redux-thunk';
-import { actionCreators } from '../../../store/weather-forecasts';
+import _ from "lodash"; //import { actionCreators } from '../../../store/weather-forecasts';
+import {actionCreators} from '../../../store/actions/action-creators/dashboard-action-creators'
 
-import { dataServices } from '../../rest-client/data-services'
+import { dataServices } from '../../../rest-client/data-services'
 import { ActiveCard } from './active-card/active-card';
 import '../content.css'
 import './dashboard.css'
@@ -18,54 +19,52 @@ interface Props {
             startDateIndex: string
         }
     }
-    requestWeatherForecasts: (index: number) => void;
+    activeCards: any[];
+    loadActiveCards: () => void;
 }
 
 class Dashboard extends Component<Props, any> {
-    activeCards: any = [];
-    componentDidMount() {
 
-        // This method is called when the component is first added to the document
-        // this.ensureDataFetched();
-
-        this.activeCards = dataServices.getActiveCards(); 
+    componentDidMount() { 
+        this.ensureDataFetched(); 
     }
 
-    componentDidUpdate() {
-        // This method is called when the route parameters change
-        //this.ensureDataFetched();
+    componentDidUpdate() { 
     }
 
     ensureDataFetched() {
-        const startDateIndex = parseInt(this.props.match.params.startDateIndex, 10) || 0;
-        this.props.requestWeatherForecasts(startDateIndex);
+        this.props.loadActiveCards();
     }
 
     render() {
-        let arr = [1, 2, 3, 5, 6, 7, 8, 9];
+        const { activeCards } = this.props;   
         return (
             <div>
                 <span className="title">Dashboard</span>
                 <div className='active-cards'>
                     {
-                       this.activeCards.map((data: any, index: number) => <ActiveCard key={index} {...data} />)
-                    }
-
-                </div>
+                      activeCards && activeCards.map((data: any, index: number) => <ActiveCard key={index} {...data} />)
+                    } 
+                </div> 
             </div>
         );
     }
 }
 
 export type State = {
-    weatherForecasts: any
+    dashBoard: any
 }
-
-const mapStateToProps = (state: State) => state.weatherForecasts
+ 
+const mapStateToProps = (state: State) => { 
+    const { activeCards } = state.dashBoard;
+    return {
+       activeCards
+    } 
+};
 
 const mapDispatchToProps = (dispatch: ThunkDispatch<State, void, Action>) => {
     return {
-        requestWeatherForecasts: (startDateIndex: number) => dispatch(actionCreators.requestWeatherForecasts(startDateIndex)),
+        loadActiveCards: () => dispatch(actionCreators.loadActiveCards()),
     };
 }
 

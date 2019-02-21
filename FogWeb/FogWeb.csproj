@@ -27,7 +27,7 @@
     <None Remove="ClientApp\src\components\layout.bin" />
     <None Remove="ClientApp\src\components\layout\side-nav\side-nav - Copy.bak" />
     <None Remove="ClientApp\src\components\layout\side-nav\side-nav - Copy.tsx" />
-    <None Remove="ClientApp\src\components\rest-client\data-services.tsx" />
+    <None Remove="ClientApp\src\rest-client\data-services.tsx" />
   </ItemGroup>
 
   <ItemGroup>
@@ -40,12 +40,11 @@
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\app.tsx" />
     <TypeScriptCompile Include="ClientApp\src\components\content\dashboard\dashboard.tsx" />
-    <TypeScriptCompile Include="ClientApp\src\components\rest-client\data-services.tsx" />
+    <TypeScriptCompile Include="ClientApp\src\rest-client\data-services.tsx" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="ClientApp\src\components\LinkoTypes\" />
-    <Folder Include="ClientApp\src\components\RestClient\" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

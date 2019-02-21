@@ -1,8 +1,8 @@
-﻿import activeCards from './mock-data/data'; 
+﻿import activeCards from './mock-data/activeCards'; 
 
 class DataServicesDataProvider
 {
-    getActiveCards() { 
+    async getActiveCards() { 
         return activeCards;
     } 
 }

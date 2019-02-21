@@ -9,8 +9,7 @@ interface Props {
   increment: () => void;
 }
   
-const Counter: React.StatelessComponent<any> = props => {
-  console.log(props.count); 
+const Counter: React.StatelessComponent<any> = props => { 
   
   return (
   <div>
