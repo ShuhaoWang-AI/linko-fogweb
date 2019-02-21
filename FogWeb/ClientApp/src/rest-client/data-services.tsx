@@ -1,4 +1,4 @@
-﻿import activeCards from './mock-data/activeCards'; 
+﻿import activeCards from './mock-data/active-cards'; 
 
 class DataServicesDataProvider
 {
