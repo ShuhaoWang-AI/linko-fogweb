@@ -39,21 +39,21 @@ To create a production bundle, use `npm run build` or `yarn build`.
 -->
 </body>
 <script>
-    //function setFullSize() {
-    //    var windowheight = (window.innerHeight - 80)+ "px";
-    //    var elements = document.getElementsByClassName("full-size");
-    //    for (let el in elements) {
-    //        if (elements.hasOwnProperty(el)) {
-    //            elements[el].style.height = windowheight;
-    //        }
-    //    }
-    //}
+    function setFullSize() {
+        var windowheight = (window.innerHeight - 80)+ "px";
+        var elements = document.getElementsByClassName("full-size");
+        for (let el in elements) {
+            if (elements.hasOwnProperty(el)) {
+                elements[el].style.height = windowheight;
+            }
+        }
+    }
 
-    //window.onresize = function () {
-    //    setFullSize();
-    //}
+    window.onresize = function () {
+        setFullSize();
+    }
 
-    //setFullSize(); 
+    setFullSize(); 
 
 </script>
 </html>

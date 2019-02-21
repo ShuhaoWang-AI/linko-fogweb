@@ -6,11 +6,11 @@ import "./layout.scss";
 
 
 export default (props:any) => (
-    <div>  
+    <div className="">  
 
         <Header />
         <Container>
-            <div className="main"> 
+            <div className="main full-size"> 
                 <SideNav />
                 <div className="content">
                     {
