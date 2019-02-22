@@ -1,0 +1,103 @@
+﻿
+@import '../../../../assets/css/_colors.scss'; 
+
+$count-font-size: 20px;
+$event-description-font-szie: 14px;
+$row-font-size: 12px;
+$wiget-width: 540px;
+$wiget-height:400px;
+
+.dashboard-widget-wrapper {
+    display: inline;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 10px;
+    padding: 10px;
+    flex-wrap: wrap; 
+}
+
+.table-widget {
+    display: flex;
+    flex-direction: column;
+    width: $wiget-width;
+    height: $wiget-height;
+    border-radius: 5px;
+    
+    margin: 10px;
+    padding: 5px 5px 25px 5px;
+    background-color: $ai-white;
+}
+
+img {
+    border: 0;
+} 
+
+.chart-widget {
+    @extend .table-widget;
+}
+
+.table-widget-header {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    height: 30px; 
+    padding: 10px;
+    margin: 10px;
+    .event-description {
+        margin-left: 10px;
+        font-size: $event-description-font-szie;
+    };
+
+    .count {
+        font-size: $count-font-size;
+        font-weight: 700;
+        align-content:center;
+    };
+
+    .more {
+        align-self: flex-end; 
+        margin-left: auto;
+    }
+};
+
+.table-widget-content { 
+    flex:1;
+    display:inline-table;
+    margin:5px;
+    
+    table { 
+        width:100%;
+        padding:5px; 
+        font-size: $row-font-size;
+    }
+}
+
+th {
+    padding:5px;
+    background-color: $ai-xxlight;
+    border: 1px solid $ai-xlight;  
+    text-align: center; 
+}
+
+table, th, tr,td { 
+    color: $ai-dark;
+    border-bottom: 1px solid $ai-xlight;
+    padding:4px;  
+    height: 40px;
+    font-size: $row-font-size;
+}
+
+.more-button {
+    align-self:center; 
+    margin-top:auto;
+}
+
+.over-due-green {
+    color: $ai-red;
+    font-weight: 700;
+}
+
+.over-due-danger {
+    color: $ai-green;
+    font-weight:700;
+}

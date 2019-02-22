@@ -8,7 +8,8 @@ a.navbar-brand {
 }
 
 html {
-  font-size: 14px;
+    font-size: 14px;
+    height: 100vh;
 }
 @media (min-width: 768px) {
     html {
@@ -16,9 +17,9 @@ html {
     }
 
     body container {
-        height: 100% !important;
+        min-height: 100% !important;
         background: $ai-white;
-        padding:0px !important;
+        padding:0px !important; 
     }
 }
 
@@ -31,17 +32,20 @@ html {
     -webkit-flex-direction: row; /* Safari 6.1+ */
     display: flex;
     flex-flow: row wrap;
-    flex-direction: row;
-    min-height: 100%;
+    flex-direction: row; 
     width: 100%;
-    padding-top:20px;
-    background: $ai-xxxlight;
+    padding-top: 20px;
+    background: $ai-xxxlight; 
+    min-height: 100vh
 }
 .content {
     padding: 0px 10px;
-    flex: 1; 
+    flex: 1;
+    display:inline-block;
+    overflow:auto;
 }
 
 .container {
-    min-width: 90% !important; 
+    min-width: 90% !important;
+    flex: 1;
 }

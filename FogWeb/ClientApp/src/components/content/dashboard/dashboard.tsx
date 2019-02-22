@@ -8,6 +8,7 @@ import {actionCreators} from '../../../store/actions/action-creators/dashboard-a
 
 import { dataServices } from '../../../rest-client/data-services'
 import { ActiveCard } from './active-card/active-card';
+import { TableWidget } from './table-widget/table-widget';
 
 import './dashboard.scss'
 
@@ -43,8 +44,16 @@ class Dashboard extends Component<Props, any> {
                 <span className="title">Dashboard</span>
                 <div className='active-cards'>
                     {
-                      activeCards && activeCards.map((data: any, index: number) => <ActiveCard key={index} {...data} />)
+                        activeCards && activeCards.map((data: any, index: number) => <ActiveCard key={index} {...data} />)
                     } 
+                </div> 
+                <div className='dashboard-widget-wrapper'>
+
+                    <img className="chart-widget" src='/assets/img/chart-example.png' /> 
+
+                    {
+                        activeCards && activeCards.map((item: any, index: number) => <TableWidget key={`table-${index}`} {...item}/>)
+                    }
                 </div> 
             </div>
         );

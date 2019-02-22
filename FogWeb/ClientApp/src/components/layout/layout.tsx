@@ -10,7 +10,7 @@ export default (props:any) => (
 
         <Header />
         <Container>
-            <div className="main full-size"> 
+            <div className="main"> 
                 <SideNav />
                 <div className="content">
                     {
