@@ -3,12 +3,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
-import { createBrowserHistory, BrowserHistoryBuildOptions  } from 'history';
+import { createBrowserHistory, BrowserHistoryBuildOptions } from 'history';
+import { polyfill } from 'es6-promise'; 
 import configureStore from './store/configureStore';
  
 import { App } from './app';
-
 import registerServiceWorker from './registerServiceWorker';
+
+polyfill();
 
 declare global {
   interface Window {
