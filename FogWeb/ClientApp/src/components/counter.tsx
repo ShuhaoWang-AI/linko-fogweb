@@ -1,3 +1,5 @@
+////This is just an example file
+
 import React from 'react';
 import { bindActionCreators, Dispatch } from 'redux';
 import { connect } from 'react-redux';

@@ -1,3 +1,5 @@
+////This is just an example file
+
 const incrementCountType = 'INCREMENT_COUNT';
 const decrementCountType = 'DECREMENT_COUNT';
 const initialState = { count: 10 };

@@ -1,3 +1,5 @@
+////This is just an example file
+
 import { requestWeatherForecastsType, receiveWeatherForecastsType } from './actions/action-types/dashboard-action-types'; 
 
 const initialState = { forecasts: [], isLoading: false };

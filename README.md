@@ -35,31 +35,41 @@ Linko.FogWeb/
     		css
     		font
     		img
-        components 
-    		dasboard 
-    			active-card 
-    				active-card.scss
-    				active-card.tsx
-    			dashboard.tsx
-    			index.tsx
-    			dashboard.scss
-    		disposal-sites 
-    			disposal-sites.tsx
-    			index.tsx
-    		facilities 
-    			facilities.tsx
-    			index.tsx
+        components
+			content
+    			dasboard 
+    				active-card 
+    					active-card.scss
+    					active-card.tsx
+    				dashboard.tsx
+    				index.tsx
+    				dashboard.scss
+    			disposal-sites 
+    				disposal-sites.tsx
+    				index.tsx
+    			facilities 
+    				facilities.tsx
+    				index.tsx
     
-    		....other components
-    		linko-types 
-    		route
-    			linko-route.tsx 
+    			....other components
+    			linko-types 
+    			route
+    				linko-route.tsx 
     
-    		about.tsx
-    		counter.tsx
-    		fetch-data.tsx
-    		home.scss
-    		home.tsx
+    			about.tsx
+    			counter.tsx     (This is just an example file)
+    			fetch-data.tsx  (This is just an example file)
+    			home.scss
+    			home.tsx
+			layout
+				header
+					header.scss
+					header.tsx
+				side-nav
+					side-nav.scss
+					side-nav.tsx
+				layout.scss
+				layout.tsx
     	rest-client
     		moc-data
     			active-cards.tsx 
@@ -73,8 +83,8 @@ Linko.FogWeb/
     		reducers
     			dashboard-reducers.tsx 
     		configreStore.tsx
-    		counter.tsx
-    		weather-forecasts.js
+    		counter.tsx  (This is just an example file)
+    		weather-forecasts.js (This is just an example file)
     	app.test.js
     	app.tsx;
     	index.tsx;
