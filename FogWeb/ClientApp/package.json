@@ -26,8 +26,7 @@
     "react-scripts": "2.1.5",
     "reactstrap": "^6.3.0",
     "redux": "^3.7.2",
-    "redux-thunk": "^2.2.0",
-    "rimraf": "^2.6.2"
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "@types/react-redux": "^7.0.1",
